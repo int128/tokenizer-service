@@ -53,8 +53,8 @@
                                 <goal>run</goal>
                             </goals>
                             <configuration>
-                                <port>13000</port>
-                                <path>/jaxrs-service</path>
+                                <port>${test.server.port}</port>
+                                <path>/</path>
                                 <useSeparateTomcatClassLoader>true</useSeparateTomcatClassLoader>
                             </configuration>
                         </execution>
@@ -93,7 +93,7 @@
                         <phase>pre-integration-test</phase>
                         <configuration>
                             <port>${test.server.port}</port>
-                            <path>/jaxrs-service</path>
+                            <path>/</path>
                             <fork>true</fork>
                             <useSeparateTomcatClassLoader>true</useSeparateTomcatClassLoader>
                         </configuration>
@@ -105,7 +105,7 @@
                         </goals>
                         <phase>post-integration-test</phase>
                         <configuration>
-                            <path>/jaxrs-service</path>
+                            <path>/</path>
                         </configuration>
                     </execution>
                 </executions>
