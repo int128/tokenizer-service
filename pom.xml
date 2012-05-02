@@ -57,6 +57,7 @@
 								<port>${test.server.port}</port>
 								<path>/</path>
 								<useSeparateTomcatClassLoader>true</useSeparateTomcatClassLoader>
+								<contextReloadable>true</contextReloadable>
 							</configuration>
 						</execution>
 					</executions>
