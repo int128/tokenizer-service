@@ -10,7 +10,8 @@
 	<description>Simple CXF JAX-RS webapp service using spring configuration</description>
 	<properties>
 		<jackson.version>1.9.5</jackson.version>
-		<test.server.port>8888</test.server.port>
+		<preview.server.port>8888</preview.server.port>
+		<test.server.port>13000</test.server.port>
 	</properties>
 	<repositories>
 		<repository>
@@ -62,7 +63,7 @@
 								<goal>run</goal>
 							</goals>
 							<configuration>
-								<port>${test.server.port}</port>
+								<port>${preview.server.port}</port>
 								<path>/</path>
 								<useSeparateTomcatClassLoader>true</useSeparateTomcatClassLoader>
 							</configuration>
