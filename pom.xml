@@ -4,10 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.hidetake</groupId>
 	<artifactId>tokenizer-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>war</packaging>
-	<name>Simple CXF JAX-RS webapp service using spring configuration</name>
-	<description>Simple CXF JAX-RS webapp service using spring configuration</description>
+	<description>REST service of morphological analysis</description>
 	<properties>
 		<jackson.version>1.9.5</jackson.version>
 		<preview.server.port>8888</preview.server.port>
@@ -146,4 +145,5 @@
 			</plugin>
 		</plugins>
 	</build>
+	<name>Morphological Analysis Service</name>
 </project>
