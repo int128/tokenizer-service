@@ -8,7 +8,6 @@
 	<packaging>war</packaging>
 	<description>REST service of morphological analysis</description>
 	<properties>
-		<jackson.version>1.9.5</jackson.version>
 		<preview.server.port>8888</preview.server.port>
 		<test.server.port>13000</test.server.port>
 	</properties>
@@ -32,7 +31,7 @@
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-jaxrs</artifactId>
-			<version>${jackson.version}</version>
+			<version>1.9.5</version>
 		</dependency>
 		<dependency>
 			<groupId>org.atilika.kuromoji</groupId>
