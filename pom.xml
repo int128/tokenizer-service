@@ -12,6 +12,12 @@
 		<jackson.version>1.9.5</jackson.version>
 		<test.server.port>8888</test.server.port>
 	</properties>
+	<repositories>
+		<repository>
+			<id>Atilika Open Source repository</id>
+			<url>http://www.atilika.org/nexus/content/repositories/atilika</url>
+		</repository>
+	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.cxf</groupId>
@@ -27,6 +33,13 @@
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-jaxrs</artifactId>
 			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.atilika.kuromoji</groupId>
+			<artifactId>kuromoji</artifactId>
+			<version>0.7.7</version>
+			<type>jar</type>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
